@@ -1,8 +1,5 @@
 {% set name = "ccdproc" %}
 {% set version = "1.3.0" %}
-{% set file_extension = "zip" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "87b3e927b6a32b7d3b73440be6f29671a66db87c93f6a0454105288d2002a8d8" %}
 
 package:
   version: '{{ version }}'
@@ -10,8 +7,9 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_extension }}
-  '{{ hash_type }}': '{{ hash_value }}'
-  fn: '{{ name }}-{{ version }}.{{ file_extension }}'
+  sha256: "87b3e927b6a32b7d3b73440be6f29671a66db87c93f6a0454105288d2002a8d8"
+  patches:
+    - setup.cfg.patch
 
 build:
   noarch: python
