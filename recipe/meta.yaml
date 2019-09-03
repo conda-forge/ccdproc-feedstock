@@ -19,15 +19,15 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3
     - setuptools
   run:
-    - python
-    - astropy >=1.0
+    - python >=3
+    - astropy >=2.0
     - numpy
     - scipy
-    - astroscrappy
-    - reproject
+    - astroscrappy >=1.05
+    - reproject >=0.5
     - scikit-image
 
 test:
