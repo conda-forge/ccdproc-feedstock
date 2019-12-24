@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: "f1ba228d048969d18b6dbd4b81c36029e168101439d16a44ecc8435d5955527f"
-  patches:
-    - setup.cfg.patch
 
 build:
   noarch: python
@@ -21,6 +19,7 @@ requirements:
     - pip
     - python >=3
     - setuptools
+    - setuptools_scm
   run:
     - python >=3
     - astropy >=2.0
