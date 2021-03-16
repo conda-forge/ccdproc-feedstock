@@ -36,12 +36,12 @@ test:
 
 about:
   home: http://ccdproc.readthedocs.io/
-  license: BSD 3-clause
+  license: BSD-3-clause
   license_family: BSD
   license_file: LICENSE.rst
   summary: Astropy affiliated package for reducing optical/IR CCD data
   description: |
-    Ccdproc is is an affiliated package for the AstroPy package for basic data
+    Ccdproc is an affiliated package for the AstroPy package for basic data
     reductions of CCD images. The ccdproc package provides many of the
     necessary tools for processing of ccd images built on a framework to
     provide error propagation and bad pixel tracking throughout the reduction
