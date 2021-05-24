@@ -3,7 +3,7 @@ About ccdproc
 
 Home: http://ccdproc.readthedocs.io/
 
-Package license: BSD 3-clause
+Package license: BSD-3-clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ccdproc-feedstock/blob/master/LICENSE.txt)
 
@@ -13,7 +13,7 @@ Development: https://github.com/astropy/ccdproc
 
 Documentation: http://ccdproc.readthedocs.io/
 
-Ccdproc is is an affiliated package for the AstroPy package for basic data
+Ccdproc is an affiliated package for the AstroPy package for basic data
 reductions of CCD images. The ccdproc package provides many of the
 necessary tools for processing of ccd images built on a framework to
 provide error propagation and bad pixel tracking throughout the reduction
@@ -47,6 +47,7 @@ Installing `ccdproc` from the `conda-forge` channel can be achieved by adding `c
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `ccdproc` can be installed with:

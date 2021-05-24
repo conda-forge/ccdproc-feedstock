@@ -1,13 +1,13 @@
 {% set name = "ccdproc" %}
-{% set version = "2.1.1" %}
+{% set version = "2.2.0" %}
 
 package:
-  version: '{{ version }}'
-  name: '{{ name|lower }}'
+  version: {{ version }}
+  name: {{ name|lower }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7323ad16742401a727d976defc2b69cd207180d817069bdccf6a4617c816ca8d
+  sha256: 23f10ca04baf4a750837f6a557122eef38a1c86aeab39cd8597e5c89e91056c1
 
 build:
   noarch: python
@@ -17,16 +17,16 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.6
-    - astropy >=2.0
-    - numpy >=1.16
+    - python >=3.7
+    - astropy >=4.0.5
+    - numpy >=1.17
     - scipy
-    - astroscrappy >=1.0.5
-    - reproject >=0.5
+    - astroscrappy >=1.0.7
+    - reproject >=0.7
     - scikit-image
 
 test:
@@ -36,7 +36,7 @@ test:
 
 about:
   home: http://ccdproc.readthedocs.io/
-  license: BSD-3-clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.rst
   summary: Astropy affiliated package for reducing optical/IR CCD data
