@@ -17,16 +17,16 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.6
-    - astropy >=2.0
-    - numpy >=1.16
+    - python >=3.7
+    - astropy >=4.0.5
+    - numpy >=1.17
     - scipy
-    - astroscrappy >=1.0.5
-    - reproject >=0.5
+    - astroscrappy >=1.0.7
+    - reproject >=0.7
     - scikit-image
 
 test:
@@ -36,7 +36,7 @@ test:
 
 about:
   home: http://ccdproc.readthedocs.io/
-  license: BSD-3-clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.rst
   summary: Astropy affiliated package for reducing optical/IR CCD data
