@@ -1,5 +1,5 @@
 {% set name = "ccdproc" %}
-{% set version = "2.3.1" %}
+{% set version = "2.4.0" %}
 
 package:
   version: {{ version }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 08e2bf66c67ae773caadeebf2045fb35df531039921510a7b8d6e44fe36f5624
+  sha256: 614b0328726c5dd69f8ab36c8ee053e91ff8f6591c3549672b20b383a2d5c13b
 
 build:
   noarch: python
