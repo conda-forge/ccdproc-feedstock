@@ -1,11 +1,11 @@
-About ccdproc
-=============
+About ccdproc-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ccdproc-feedstock/blob/main/LICENSE.txt)
 
 Home: http://ccdproc.readthedocs.io/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ccdproc-feedstock/blob/main/LICENSE.txt)
 
 Summary: Astropy affiliated package for reducing optical/IR CCD data
 
