@@ -1,5 +1,5 @@
 {% set name = "ccdproc" %}
-{% set version = "2.4.1" %}
+{% set version = "2.4.2" %}
 
 package:
   version: {{ version }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3f897e24a0d76852b3c84d861123f263f4b0a92cc68f02f48efcc80cdda3d7a0
+  sha256: dd9b0802bd7e1868b0cae870e9e41362ca937f62a14bf03e6f17469bea8eca91
 
 build:
   noarch: python
@@ -17,13 +17,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.7
-    - astropy >=4.0.6
-    - numpy >=1.17
+    - python >=3.8
+    - astropy >=5.0.1
+    - numpy >=1.21
     - scipy
     - astroscrappy >=1.0.8
     - reproject >=0.7
