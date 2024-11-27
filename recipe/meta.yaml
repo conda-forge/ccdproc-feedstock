@@ -6,12 +6,12 @@ package:
   name: {{ name|lower }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: dd9b0802bd7e1868b0cae870e9e41362ca937f62a14bf03e6f17469bea8eca91
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -22,7 +22,7 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.8
-    - astropy >=5.0.1
+    - astropy-base >=5.0.1
     - numpy >=1.21
     - scipy
     - astroscrappy >=1.0.8
