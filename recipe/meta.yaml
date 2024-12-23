@@ -11,17 +11,17 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - astropy-base >=5.0.1
     - numpy >=1.21
     - scipy
@@ -30,6 +30,8 @@ requirements:
     - scikit-image
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - ccdproc
     - ccdproc.utils
